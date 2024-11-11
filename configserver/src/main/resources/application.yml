@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/BallaAicha/bank.git
+          uri: https://github.com/BallaAicha/bankapp
           default-label: main
           timeout: 5
           clone-on-start: true
