@@ -1,7 +1,6 @@
-server:
-  port: 8080
-
 spring:
+  config:
+    import: optional:configserver:http://localhost:8888
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -21,16 +20,16 @@ spring:
   application:
     name: accounts
   profiles:
-    active: default
+    active: defaulta
 
 
 loans:
   service:
-    url: ${LOANS_SERVICE_URL:http://loans:8090}
+    url: ${LOANS_SERVICE_URL:http://localhost:8222}
 
 cards:
   service:
-    url: ${CARDS_SERVICE_URL:http://cards:9000}
+    url: ${CARDS_SERVICE_URL:http://localhost:8222}
 
 logging:
   level:

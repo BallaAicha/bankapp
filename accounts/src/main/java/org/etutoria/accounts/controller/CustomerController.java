@@ -19,11 +19,11 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @Tag(
-        name = "REST API for Customers in EazyBank",
+        name = "REST API for Customers in Ismagi Bank",
         description = "REST APIs in EazyBank to FETCH customer details"
 )
 @RestController
-@RequestMapping(path="/api", produces = {MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(path="/api/v1/accounts/customers", produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated
 public class CustomerController {
 

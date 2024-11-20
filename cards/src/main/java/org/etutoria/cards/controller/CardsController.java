@@ -26,11 +26,11 @@ import org.springframework.web.bind.annotation.*;
  */
 
 @Tag(
-        name = "CRUD REST APIs for Cards in EazyBank",
-        description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE card details"
+        name = "CRUD REST APIs for Cards in Ismagi",
+        description = "CRUD REST APIs in Ismagi to CREATE, UPDATE, FETCH AND DELETE card details"
 )
 @RestController
-@RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(path = "/api/v1/cards/card", produces = {MediaType.APPLICATION_JSON_VALUE})
 @AllArgsConstructor
 @Validated
 public class CardsController {
@@ -39,7 +39,7 @@ public class CardsController {
 
     @Operation(
             summary = "Create Card REST API",
-            description = "REST API to create new Card inside EazyBank"
+            description = "REST API to create new Card inside Ismagi"
     )
     @ApiResponses({
             @ApiResponse(

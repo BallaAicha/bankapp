@@ -21,11 +21,11 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @Tag(
-        name = "CRUD REST APIs for Loans in EazyBank",
-        description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE loan details"
+        name = "CRUD REST APIs for Loans in Ismagi",
+        description = "CRUD REST APIs in Ismagi to CREATE, UPDATE, FETCH AND DELETE loan details"
 )
 @RestController
-@RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(path = "/api/v1/loans/loan", produces = {MediaType.APPLICATION_JSON_VALUE})
 @AllArgsConstructor
 @Validated
 public class LoansController {
@@ -34,7 +34,7 @@ public class LoansController {
 
     @Operation(
             summary = "Create Loan REST API",
-            description = "REST API to create new loan inside EazyBank"
+            description = "REST API to create new loan inside Ismagi"
     )
     @ApiResponses({
             @ApiResponse(

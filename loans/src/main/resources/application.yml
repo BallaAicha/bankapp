@@ -1,6 +1,8 @@
 server:
   port: 8090
 spring:
+  config:
+    import: optional:configserver:http://localhost:8888
   application:
     name: "loans"
   datasource:

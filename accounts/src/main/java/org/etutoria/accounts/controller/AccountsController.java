@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.*;
         description = "CRUD REST APIs in MbackeBank to CREATE, UPDATE, FETCH AND DELETE account details"
 )
 @RestController
-@RequestMapping(path="/api", produces = {MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(path="/api/v1/accounts/account", produces = {MediaType.APPLICATION_JSON_VALUE})
 @AllArgsConstructor
 @Validated
 public class AccountsController {

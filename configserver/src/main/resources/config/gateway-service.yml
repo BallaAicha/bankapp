@@ -1,0 +1,22 @@
+server:
+  port: 8222
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: accounts
+          uri: lb:http://ACCOUNTS
+          predicates:
+            - Path=/api/v1/accounts/**
+        - id: cards
+          uri: lb:http://CARDS
+          predicates:
+            - Path=/api/v1/cards/**
+        - id: loans
+          uri: lb:http://LOANS
+          predicates:
+            - Path=/api/v1/loans/**
+

@@ -21,21 +21,20 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @OpenAPIDefinition(
         info = @Info(
                 title = "Accounts microservice REST API Documentation",
-                description = "MbackeBank Accounts microservice REST API Documentation",
+                description = "Ismagi Accounts microservice REST API Documentation",
                 version = "v1",
                 contact = @Contact(
-                        name = "Ousmane Mbacke",
-                        email = "usmanembacke@gmail.com",
-                        url = "https://www.etutoria.org"
+                        name = "Ousmane MBACKE",
+                        email = "usmanembacke@gmail.com"
                 ),
                 license = @License(
-                        name = "Apache 2.0",
-                        url = "https://www.etutoria.org"
+                        name = "Version 2.0",
+                        url = "usmanembaccke@gmail.com"
                 )
         ),
         externalDocs = @ExternalDocumentation(
-                description =  "MbackeBank Accounts microservice REST API Documentation",
-                url = "https://www.etutoria.org/swagger-ui.html"
+                description = "Ismagi Accounts microservice REST API Documentation",
+                url = "usmanembacke@gmail.com"
         )
 )
 public class AccountsApplication {

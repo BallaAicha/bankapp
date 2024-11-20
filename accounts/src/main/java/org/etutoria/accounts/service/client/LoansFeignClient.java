@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(name = "loans", url = "${loans.service.url}", fallback = LoansFallback.class)
 public interface LoansFeignClient {
-    @GetMapping(value = "/api/fetch", consumes = "application/json")
+    @GetMapping(value = "/api/v1/loans/loan/fetch", consumes = "application/json")
     ResponseEntity<LoansDto> fetchLoanDetails(@RequestParam String mobileNumber);
 }
